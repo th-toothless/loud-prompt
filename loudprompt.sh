@@ -146,7 +146,7 @@ function promptcmd()
 	fi
 	# don't display user if root
 	if [ $EUID -eq 0 ] ; then
-		PS1="${PS1}${sesClr}[${cRWN}!"
+		PS1="${PS1}${sesClr}[${cRWN}\u${cUHS}${UHS}"
 	else
 		PS1="${PS1}${sesClr}[${cUSR}\u${cUHS}${UHS}"
 	fi
